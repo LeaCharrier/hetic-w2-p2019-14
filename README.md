@@ -1,4 +1,4 @@
-# Project Lunette Snapchat
+# Snapchat Spectacles
 
 ## Getting Started
 
