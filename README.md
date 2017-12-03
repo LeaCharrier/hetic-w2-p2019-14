@@ -1,8 +1,27 @@
-Note : for each instruction below, you can of course also use ```npm``` instead of ```yarn```
-# Setup
-Clone the project, move to the directory and run ```yarn install```
-# Usage
-### Development
-Running ```yarn run dev``` will launch browser sync and allow you to visit your website on ``` http://localhost:3000/```
-### Production
-Running ```yarn run build``` will generate productions files in the ```/dist``` folder, which you can then serve for production.
+# Project Lunette Snapchat
+
+## Getting Started
+
+These instructions will be used to install and start the project.
+
+### Installing
+
+Simply run the following commands into the project directory:
+```sh
+$ npm install
+$ npm install webpack-dev-server -g # you might need "sudo" before that if you get an error
+$ npm run dev
+```
+Your site should now be running at http://localhost:8080
+
+### Convention d'écriture
+
+• Indent spaces => 2 ; No Tabs
+• Utiliser le BEM;
+• 1 style par ligne ;
+• 1 espace après le selecteur ;
+• 1 espace après le nom des propriétés ;
+• Ouverture de l'accolade sur la première ligne ;
+• Saut de ligne avant chaque sélecteur ;
+• Mettre les couleurs, typos dans des variables ;
+• Ordonner les propriétés : positionnement, taille, apparence, texte, animation ;
