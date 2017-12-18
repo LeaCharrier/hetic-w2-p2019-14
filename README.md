@@ -12,7 +12,7 @@ $ npm install
 $ bower install
 $ gulp serve
 ```
-Your site should now be running at http://localhost:8080
+Your site should now be running
 
 ### Convention d'écriture
 
