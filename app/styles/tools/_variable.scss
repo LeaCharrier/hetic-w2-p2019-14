@@ -2,9 +2,16 @@
   VARIABLES
 /* ========================================================================== */
 
+/*breakpoints*/
+$breakPointMobile: 550px;
+$breakPointTablet: 768px;
+$breakPointDesktop: 1024px;
+
 /* fonts */
-$roboto: 'Roboto', arial, sans-serif;
+$avenirNew: 'AvenirNew', arial, sans-serif;
+$helvetica: Helvetica;
 
 /* colors */
 $black: #000000;
 $white: #fff;
+$yellow: #FFFC00;
