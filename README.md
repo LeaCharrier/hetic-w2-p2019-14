@@ -9,8 +9,8 @@ These instructions will be used to install and start the project.
 Simply run the following commands into the project directory:
 ```sh
 $ npm install
-$ npm install webpack-dev-server -g # you might need "sudo" before that if you get an error
-$ npm run dev
+$ bower install
+$ gulp serve
 ```
 Your site should now be running at http://localhost:8080
 
