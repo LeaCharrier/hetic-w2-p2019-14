@@ -1,0 +1,71 @@
+.presentation-product {
+  background-color: $yellow;
+  padding-bottom: 70px;
+
+  @include minWidth($breakPointMobile) {
+    display: flex;
+  }
+
+  &__img {
+    display: inline-block;
+    position: relative;
+    max-width: 50%;
+
+    @include minWidth($breakPointMobile) {
+      padding-left: 10px;
+      margin-top: 35px;
+    }
+
+    &-skate {
+      position: absolute;
+      max-width: 40%;
+      left: 35px;
+      bottom: 20px;
+      
+      @include minWidth($breakPointMobile) {
+        bottom: 200px;
+      }
+    }
+
+    &-skateuse {
+      width: 95%;
+    }
+  }
+
+  &__text {
+    float: right;
+    max-width: 50%;
+    padding:0 20px 0 10px;
+
+    @include minWidth($breakPointMobile) {
+      margin-left: 30px;
+      padding-right: 70px;
+    }
+
+    &-title {
+      font-family: $helvetica;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include minWidth($breakPointMobile) {
+        text-align: inherit;
+        margin-top: 30%;
+        font-size: 2.6rem;
+        margin-bottom: 70px;
+      }
+    }
+
+    &-description {
+      font-family: $avenirNew;
+      font-size: 0.7em;
+      font-weight: 500;
+      line-height: 1.4;
+
+      @include minWidth($breakPointMobile) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}

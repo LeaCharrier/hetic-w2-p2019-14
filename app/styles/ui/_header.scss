@@ -7,11 +7,16 @@ header {
   padding: 10px;
 
   @include minWidth($breakPointTablet) {
-     padding: 20px 40px;
+    padding: 10px 30px;
   }
 
   .header- {
 
+    &title {
+      position: absolute;
+      text-indent: -3000px;
+    }
+    
     &logo {
       width: 100px;
 
@@ -34,8 +39,8 @@ header {
       }
 
       &__text {
-        font-size: 0.875rem;
         font-family: $helvetica;
+        font-size: 0.875rem;
         text-align: center;
 
         @include minWidth($breakPointTablet) {
