@@ -1,45 +1,51 @@
 .presentation-product {
-  background-color: $yellow;
-  padding-bottom: 70px;
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -60px;
 
-  @include minWidth($breakPointMobile) {
+  @include minWidth($breakPointTablet) {
     display: flex;
   }
 
   &__img {
     display: inline-block;
     position: relative;
-    max-width: 50%;
+    width: 48%;
 
-    @include minWidth($breakPointMobile) {
+    @include minWidth($breakPointTablet) {
       padding-left: 10px;
       margin-top: 35px;
     }
 
     &-skate {
       position: absolute;
-      max-width: 40%;
+      max-width: 35%;
       left: 35px;
       bottom: 20px;
       
-      @include minWidth($breakPointMobile) {
+      @include minWidth($breakPointTablet) {
         bottom: 200px;
+        left: 48px;
       }
     }
 
     &-skateuse {
       width: 95%;
+      @include minWidth($breakPointTablet) {
+        width: 88%;
+      }
     }
   }
 
   &__text {
     float: right;
-    max-width: 50%;
+    width: 50%;
     padding:0 20px 0 10px;
 
-    @include minWidth($breakPointMobile) {
-      margin-left: 30px;
-      padding-right: 70px;
+    @include minWidth($breakPointTablet) {
+      // margin-left: 40px;
+      margin-right: 30px;
     }
 
     &-title {
@@ -49,22 +55,29 @@
       text-align: center;
       margin-bottom: 20px;
 
-      @include minWidth($breakPointMobile) {
-        text-align: inherit;
-        margin-top: 30%;
+      @include minWidth($breakPointTablet) {
         font-size: 2.6rem;
-        margin-bottom: 70px;
+        text-align: inherit;
+        margin-top: 28%;
+        margin-bottom: 60px;
       }
     }
 
     &-description {
+      max-width: 560px;
       font-family: $avenirNext;
       font-size: 0.7em;
       font-weight: 500;
       line-height: 1.4;
 
       @include minWidth($breakPointMobile) {
+        font-size: 1em;
+        margin-top: 70px;
+      }
+
+      @include minWidth($breakPointTablet) {
         font-size: 1.125rem;
+        line-height: 1.5;
       }
     }
   }
