@@ -19,7 +19,7 @@ Your site should now be running
 $ gulp
 $ gulp build
 ```
-Link : hetic-w2-p2019-14-spectacle.netlify.com
+Link : https://hetic-w2-p2019-14-spectacle.netlify.com/
 
 ### Convention d'écriture
 
