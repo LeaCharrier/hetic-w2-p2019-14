@@ -14,6 +14,13 @@ $ gulp serve
 ```
 Your site should now be running
 
+### Deployed
+```sh
+$ gulp
+$ gulp build
+```
+Link : hetic-w2-p2019-14-spectacle.netlify.com
+
 ### Convention d'écriture
 
 • Indent spaces => 2 ; No Tabs ; 
