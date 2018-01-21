@@ -63,6 +63,9 @@
         img {
           width: 16%;
           height: 100%;
+          border: 1px solid transparent;
+          border-radius: 15px;
+          padding: 2px;
           
           @include minWidth($breakPointTablet) {
             width: 20%;
