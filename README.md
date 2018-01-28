@@ -9,14 +9,12 @@ These instructions will be used to install and start the project.
 Simply run the following commands into the project directory:
 ```sh
 $ npm install
-$ bower install
-$ gulp serve
+$ gulp
 ```
 Your site should now be running
 
 ### Deployed
 ```sh
-$ gulp
 $ gulp build
 ```
 Link : https://hetic-w2-p2019-14-spectacle.netlify.com/
