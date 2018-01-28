@@ -1,8 +1,8 @@
 {
-  "name": "gulp-test",
+  "name": "gulp-spectacles",
   "version": "1.0.0",
-  "description": "Gulp test",
-  "main": "index.js",
+  "description": "gulp-spectacles",
+  "main": "main.js",
   "author": "bcalou",
   "license": "MIT",
   "scripts": {
@@ -31,6 +31,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+     "jquery": "^3.3.1"
   }
 }
