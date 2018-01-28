@@ -1,4 +1,4 @@
-.presentation-product {
+.presentationProduct {
   background-image: url('../images/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
     background-position-y: -60px;
   }
 
-  &__img {
+  &__containImg {
     display: inline-block;
     position: relative;
     width: 48%;
