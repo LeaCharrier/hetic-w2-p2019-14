@@ -21,7 +21,7 @@ var isProd = process.env.NODE_ENV === 'production';
  */
 
 function templates() {
-  return gulp.src('src/*html')
+  return gulp.src('src/*.html')
     // .pipe(pug())
     .pipe(gulp.dest('dist/'))
     .pipe(sync.stream());
@@ -37,7 +37,7 @@ function scss() {
     .pipe(sass())
     .pipe(gulpif(isProd, minifyCSS()))
     .pipe(gulpif(!isProd, sourcemaps.write('.')))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/styles'))
     .pipe(sync.stream());
 }
 
@@ -54,7 +54,7 @@ function js() {
     .pipe(gulpif(!isProd, sourcemaps.init({loadMaps: true})))
     .pipe(uglify())
     .pipe(gulpif(!isProd, sourcemaps.write('.')))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(sync.stream());
 };
 
@@ -65,7 +65,7 @@ function js() {
 function images() {
   return gulp.src('src/images/*')
     .pipe(gulpif(isProd, imagemin({verbose: true})))
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('dist/images'));
 }
 
 /**
@@ -94,7 +94,7 @@ gulp.task('default', gulp.parallel(templates, scss, js, images, fonts, function(
     }
   });
 
-  gulp.watch('src/**/*.pug', templates);
+  gulp.watch('src/*.html', templates);
   gulp.watch('src/**/*.scss', scss);
   gulp.watch('src/**/*.js', js);
 

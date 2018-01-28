@@ -1,44 +1,5 @@
-$(document).ready(function () {
-	sliderColorLunette();
-	sliderKitLunette();
-});
+var $ = require('jquery');
+require("slick-carousel");
 
-var sliderColorLunette = function() {
-	$('.get-product__container-color-image').slick({
-	  slidesToShow: 1,
-	  arrows: false,
-	  slidesToScroll: 1,
-	  dots: true,
-
-	  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-      	slidesToShow: 1,
-        centerMode: true,
-	  		centerPadding: '30px',
-      }
-    },
-   ]
-  });
-}
-
-var sliderKitLunette = function() {
-	$('.get-product__container-kit-slider').slick({
-	  slidesToShow: 1,
-	  arrows: false,
-	  slidesToScroll: 1,
-	  dots: true,
-
-	  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-      	slidesToShow: 1,
-        centerMode: true,
-	  		centerPadding: '30px',
-      }
-    },
-   ]
-  });
-}
+import sliderColorLunette from './slick.js';
+import sliderKitLunette from './slick.js';
