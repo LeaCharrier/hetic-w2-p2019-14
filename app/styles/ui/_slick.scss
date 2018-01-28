@@ -1,0 +1,31 @@
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02{
+  &:before {
+    content:'';
+    position: absolute;
+    background-size:cover;
+    width: 100%;
+  }
+}
+
+#slick-slide-control00 {
+  &:before {
+    background-image: url('../images/oeilNoir.png');
+  }
+}
+
+#slick-slide-control01 {
+  &:before {
+    background-image: url('../images/oeilRouge.png');
+  }
+}
+
+#slick-slide-control02 {
+  &:before {
+    background-image: url('../images/oeilBleu.png');
+  }
+}
+
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}

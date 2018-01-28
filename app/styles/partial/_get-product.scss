@@ -34,54 +34,23 @@
         max-width: 30%;
       }
 
-      &-image {
+      &-image img {
         display: none;
         width: 50%;
         margin: 20px auto;
+        padding: 0 10px;
+        
+        @include minWidth($breakPointMobile) {
+          padding: 0 100px;
+        }
 
         @include minWidth($breakPointTablet) {
           width: 100%;
-              // max-width: 300px;
-    // min-width: 300px;
+          padding:0;
         }
 
         &.active {
           display: block;
-        }
-      }
-
-      &-choice {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 40px;
-        width: 40%;
-        margin: 20px auto;
-
-        @include minWidth($breakPointMobile) {
-          width: 50%;
-        }
-
-        @include minWidth($breakPointTablet) {
-          margin-top: 30px;
-          margin-bottom: 40px;
-        }
-
-        img {
-          width: 16%;
-          height: 100%;
-          border: 1px solid transparent;
-          border-radius: 15px;
-          padding: 2px;
-          
-          @include minWidth($breakPointTablet) {
-            width: 20%;
-            cursor: pointer;
-          }
-
-          &.active {
-            border: 1px solid $black;
-            border-radius: 15px;
-          }
         }
       }
 
