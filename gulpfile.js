@@ -47,7 +47,7 @@ function scss() {
 
 function js() {
   return browserify({entries: ['src/scripts/main.js'], debug: true})
-    // .transform(babelify, {presets: 'es2015'})
+    .transform(babelify, {presets: 'es2015'})
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())
