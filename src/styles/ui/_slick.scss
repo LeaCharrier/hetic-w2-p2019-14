@@ -1,10 +1,16 @@
+// PRODUCT COLOR + PRODUC KIT
 
-// PRODUCT COLOR
+.getProduct__sliderColor .slick-dots li.slick-active button:before,
+.getProduct__kitSlider .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
 
-.get-product__container-color-image 
 #slick-slide-control00, 
 #slick-slide-control01, 
-#slick-slide-control02{
+#slick-slide-control02, 
+#slick-slide-control10, 
+#slick-slide-control11, 
+#slick-slide-control12 {
   &:before {
     content:'';
     position: absolute;
@@ -13,65 +19,53 @@
   }
 }
 
-.get-product__container-color-image #slick-slide-control00 {
+// PRODUCT COLOR
+
+
+.getProduct__sliderColor #slick-slide-control00 {
   &:before {
     background-image: url('../images/oeilNoir.png');
   }
 }
 
-.get-product__container-color-image #slick-slide-control01 {
+.getProduct__sliderColor #slick-slide-control01 {
   &:before {
     background-image: url('../images/oeilRouge.png');
   }
 }
 
-.get-product__container-color-image #slick-slide-control02 {
+.getProduct__sliderColor #slick-slide-control02 {
   &:before {
     background-image: url('../images/oeilBleu.png');
   }
 }
 
-
-.get-product__container-color-image .slick-dots li.slick-active button:before {
-  opacity: 1;
-}
-
-
-
 // PRODUCT KIT
 
-.get-product__container-kit-slider #slick-slide-control10, 
-#slick-slide-control11, 
-#slick-slide-control12 {
+.getProduct__kitSlider #slick-slide-control10, 
+.getProduct__kitSlider #slick-slide-control11, 
+.getProduct__kitSlider #slick-slide-control12 {
   &:before {
-    content:'';
-    position: absolute;
-    background-size:cover;
-    
-        width: 24px;
+     width: 24px;
   }
 }
 
-.get-product__container-kit-slider #slick-slide-control10 {
+.getProduct__kitSlider #slick-slide-control10 {
   &:before {
     background-image: url('../images/etui-little.png');
     height: 22px;
   }
 }
 
-.get-product__container-kit-slider #slick-slide-control11 {
+.getProduct__kitSlider #slick-slide-control11 {
   &:before {
     background-image: url('../images/cable-little.png');
   }
 }
 
-.get-product__container-kit-slider #slick-slide-control12 {
+.getProduct__kitSlider #slick-slide-control12 {
   &:before {
     background-image: url('../images/chiffon.jpeg');
   }
 }
 
-
-.get-product__container-kit-slider .slick-dots li.slick-active button:before {
-  opacity: 1;
-}

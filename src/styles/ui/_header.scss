@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,32 +13,29 @@ header {
     padding: 10px 30px;
   }
 
-  .header- {
-
-    &title {
-      position: absolute;
-      text-indent: -3000px;
-    }
+  &__title {
+    position: absolute;
+    text-indent: -3000px;
+  }
     
-    &logo {
-      width: 100px;
+  &__img {
+    width: 100px;
 
-      @include minWidth($breakPointTablet) {
-        width: 160px;
-      }
+    @include minWidth($breakPointTablet) {
+      width: 160px;
     }
+  }
 
-    &link{
-      background-color: $white;
-      font-family: $avenirNext;
-      font-size: 0.875rem;
-      text-align: center;
-      padding: 10px;
-      border-radius: 10px;
+  &__link {
+    background-color: $white;
+    font-family: $avenirNext;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 
-      &:hover {
-        opacity: 0.9;
-      }
+    &:hover {
+      opacity: 0.9;
     }
   }
 }

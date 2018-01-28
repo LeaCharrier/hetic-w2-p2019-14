@@ -6,65 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lunette snapchat</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
 
   <body>
-    <header>
-      <h1 class="header-title">Spectacles - Lunette Snapchat</h1>
-      <img src="images/logo.svg" alt="Logo spectacle" class="header-logo">
-      <a class="header-link" href="#">ACHETER</a>
+    <header class="header">
+      <h1 class="header__title">Spectacles - Lunette Snapchat</h1>
+      <img class="header__img" src="images/logo.svg" alt="Logo spectacle" class="header-logo">
+      <a class="header__link" href="#">ACHETER</a>
     </header>
 
     <main>
       <section class="presentationProduct">
         <div class="presentationProduct__img">
-          <img class="presentationProduct__img-skate" src="images/skate.png">
-          <img class="presentationProduct__img-skateuse" src="images/skateuse.png">
+          <img class="presentationProduct__littleImg" src="images/skate.png">
+          <img class="presentationProduct__bigImg" src="images/skateuse.png">
         </div>
         <div class="presentationProduct__text">
-          <h2 class="presentationProduct__text-title">Créez des souvenirs.</h2>
-          <p class="presentationProduct__text-description">Les Spectacles immortalisent les moments que vous vivez, mais vous en profitez toujours autant ! Il suffit d'appuyer sur le bouton pour commencer à enregistrer votre univers, depuis votre point de vue, dans notre format circulaire unique.</p>
+          <h2 class="presentationProduct__title">Créez des souvenirs.</h2>
+          <p class="presentationProduct__description">Les Spectacles immortalisent les moments que vous vivez, mais vous en profitez toujours autant ! Il suffit d'appuyer sur le bouton pour commencer à enregistrer votre univers, depuis votre point de vue, dans notre format circulaire unique.</p>
         </div>
       </section>
 
-      <section class="get-product">
-        <h2 class="get-product__title">Obtenez les vôtres</h2>
-        <div class="get-product__container">
-          <div class="get-product__container-color">
-            <div class="get-product__container-color-image">
-            <img class=" active" src="images/LunetteNoir.jpg" alt="Lunette spectacles" data-color='black' class="active">
-            <img src="images/LunetteRouge.jpg" alt="Lunette spectacles" data-color='red'>
-            <img  src="images/LunetteTurquoise.jpg" alt="Lunette spectacles"  data-color='turquoise'>
+      <section class="getProduct">
+        <h2 class="getProduct__title">Obtenez les vôtres</h2>
+        <div class="getProduct__container">
+          <div class="getProduct__colorImg">
+            <div class="getProduct__sliderColor">
+              <img src="images/LunetteNoir.jpg" alt="Lunette spectacles">
+              <img src="images/LunetteRouge.jpg" alt="Lunette spectacles">
+              <img  src="images/LunetteTurquoise.jpg" alt="Lunette spectacles">
             </div>
-            <p class="get-product__container-color-text">Disponibles en noir, corail et turquoise</p>
-            <p class="get-product__container-color-text">Étui et câble de chargement inclus</p>
+            <p class="getProduct__slider-text">Disponibles en noir, corail et turquoise</p>
+            <p class="getProduct__slider-text">Étui et câble de chargement inclus</p>
           </div>
-          <div class="get-product__container-buy">
-            <p class="get-product__container-buy-text">144,99€</p>
-            <a class="get-product__container-buy-link" href="#">Achetez des spectacles</a>
+          <div class="getProduct__container-buy">
+            <p class="getProduct__price">144,99€</p>
+            <a class="getProduct__link" href="#">Achetez des spectacles</a>
           </div>
-          <div class="get-product__container-kit">
-            <h3 class="get-product__container-kit-title">Inclus</h3>
-            <div class="get-product__container-kit-slider">
-              <div class="get-product__container-kit-big">
-                <img class="get-product__container-kit-big-image" src="images/etui.jpg" alt="Etui snap">
-                <p class="get-product__container-kit-big-title">Etui</p>
+          <div class="getProduct__containerKit">
+            <h3 class="getProduct__kitTitle">Inclus</h3>
+            <div class="getProduct__kitSlider">
+              <div class="getProduct__kitSlide">
+                <img class="getProduct__kitSlide-img" src="images/etui.jpg" alt="Etui snap">
+                <p class="getProduct__slideTitle">Etui</p>
               </div>
-              <div class="get-product__container-kit-big">
-                <img class="get-product__container-kit-big-image" src="images/cable.jpg" alt="Cable snap">
-                <p class="get-product__container-kit-big-title">Cable</p>
+              <div class="getProduct__kitSlide">
+                <img class="getProduct__kitSlide-img" src="images/cable.jpg" alt="Cable snap">
+                <p class="getProduct__slideTitle">Cable</p>
               </div>
-              <div class="get-product__container-kit-big">
-                <img class="get-product__container-kit-big-image" src="images/chiffon.jpeg" alt="Chiffon snap">
-                <p class="get-product__container-kit-big-title">Chiffon</p>
+              <div class="getProduct__kitSlide">
+                <img class="getProduct__kitSlide-img" src="images/chiffon.jpeg" alt="Chiffon snap">
+                <p class="getProduct__slideTitle">Chiffon</p>
               </div>
             </div>
           </div>
         </div>
-        
       </section>
 
       <section class="discover-snap">
@@ -74,13 +75,13 @@
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li class="footer-title">Snap Inc.</li>
-        <li class="footer-text">Conditions de vente du produit</li>
-        <li class="footer-text">Conditions d’utilisation du service</li>
-        <li class="footer-text">Politique de confidentialité</li>
-        <li class="footer-text">Télécharger Snapchat</li>
+    <footer class="footer">
+      <ul class="footer__container">
+        <li class="footer__title">Snap Inc.</li>
+        <li class="footer__text">Conditions de vente du produit</li>
+        <li class="footer__text">Conditions d’utilisation du service</li>
+        <li class="footer__text">Politique de confidentialité</li>
+        <li class="footer__text">Télécharger Snapchat</li>
       </ul>
     </footer>
 

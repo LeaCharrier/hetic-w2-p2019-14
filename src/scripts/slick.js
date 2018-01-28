@@ -1,5 +1,8 @@
-function sliderColorLunette () {
-	$('.get-product__container-color-image').slick({
+import $ from 'jquery';
+import 'slick-carousel';
+
+export function sliderColorLunette() {
+	$('.getProduct__sliderColor').slick({
 	  slidesToShow: 1,
 	  arrows: false,
 	  slidesToScroll: 1,
@@ -18,8 +21,8 @@ function sliderColorLunette () {
   });
 }
 
-function sliderKitLunette () {
-	$('.get-product__container-kit-slider').slick({
+export function sliderKitLunette() {
+	$('.getProduct__kitSlider').slick({
 	  slidesToShow: 1,
 	  arrows: false,
 	  slidesToScroll: 1,

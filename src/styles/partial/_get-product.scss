@@ -1,4 +1,4 @@
-.get-product__ {
+.getProduct__ {
 
   &title {
     clear: both;
@@ -26,189 +26,188 @@
       justify-content: space-around;
       margin: 80px 20px;
     }
+  }
 
-    &-color {
-      width: 100%;
+  &colorImg {
+    width: 100%;
 
-      @include minWidth($breakPointTablet) {
-        max-width: 30%;
-      }
-
-      &-image img {
-        display: none;
-        width: 50%;
-        margin: 20px auto;
-        padding: 0 10px;
-        
-        @include minWidth($breakPointMobile) {
-          padding: 0 100px;
-        }
-
-        @include minWidth($breakPointTablet) {
-          width: 100%;
-          padding:0;
-        }
-
-        &.active {
-          display: block;
-        }
-      }
-
-      &-text {
-        font-family: $avenirNext;
-        font-size: 0.9375rem;
-        text-align: center;
-        line-height: 4;
-
-        @include minWidth($breakPointMobile) {
-          line-height: 5;
-        }
-        
-        @include minWidth($breakPointTablet) {
-          line-height: 2;
-        }
-      }
+    @include minWidth($breakPointTablet) {
+      max-width: 30%;
     }
 
-    &-buy {
-      margin: 30px auto 70px;
+    img {
+      display: none;
+      width: 50%;
+      margin: 20px auto;
+      padding: 0 10px;
+      
+      @include minWidth($breakPointMobile) {
+        padding: 0 100px;
+      }
+
+      @include minWidth($breakPointTablet) {
+        width: 100%;
+        padding:0;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }   
+
+  &slider-text {
+    font-family: $avenirNext;
+    font-size: 0.9375rem;
+    text-align: center;
+    line-height: 4;
+
+    @include minWidth($breakPointMobile) {
+      line-height: 5;
+    }
+    
+    @include minWidth($breakPointTablet) {
+      line-height: 2;
+    }
+  }
+
+  &container-buy {
+    margin: 30px auto 70px;
+
+    @include minWidth($breakPointMobile) {
+      margin: 40px auto 100px;
+    }
+
+    @include minWidth($breakPointTablet) {
+      margin: 60px 38px 0;
+      max-width: calc(40% - 76px);
+    }
+
+    @include minWidth($breakPointDesktop) {
+      margin: 10% 38px 0;
+    }
+  }
+
+  &price {
+    font-family: $avenirNext;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-bottom: 90px;
+    display: none;
+
+    @include minWidth($breakPointTablet) {
+      display: block;
+      margin-bottom: 60px;
+    }
+
+    @include minWidth($breakPointDesktop) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &link {
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: $avenirNext;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 25px 11px;
+
+    @include minWidth($breakPointMobile) {
+      line-height: 1.35714;
+    }
+
+    @include minWidth($breakPointTablet) {
+      font-size: 0.8rem;
+    }
+
+    @include minWidth($breakPointDesktop) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &containerKit {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @include minWidth($breakPointTablet) {
+      max-width: 30%;
+      width: inherit;
+      margin: 0;
+    }
+  }
+
+  &kitTitle {
+    font-family: $helvetica;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    // order: 3;
+
+    @include minWidth($breakPointMobile) {
+      font-size: 1.3rem;
+    }
+
+    @include minWidth($breakPointTablet) {
+      // order: 1;
+      font-size: 2.125rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &kitSlide {
+    // order: 1;
+    @include minWidth($breakPointMobile) {
+      position: relative;
+    }
+
+    @include minWidth($breakPointTablet) {
+      // order: 2;
+      position: relative;
+    }
+
+    &-img {
+      display: block;
+      margin: 0 auto;
+      width: 60%;
 
       @include minWidth($breakPointMobile) {
-        margin: 40px auto 100px;
+        width: 70%;
       }
 
       @include minWidth($breakPointTablet) {
-        margin: 60px 38px 0;
-        max-width: calc(40% - 76px);
-      }
-
-      @include minWidth($breakPointDesktop) {
-        margin: 10% 38px 0;
-      }
-
-      &-text {
-        font-family: $avenirNext;
-        font-size: 1.875rem;
-        text-align: center;
-        margin-bottom: 90px;
-        display: none;
-
-        @include minWidth($breakPointTablet) {
-          display: block;
-          margin-bottom: 60px;
-        }
-
-        @include minWidth($breakPointDesktop) {
-          margin-bottom: 70px;
-        }
-      }
-
-      &-link {
-        display: inline-block;
-        box-sizing: border-box;
-        cursor: pointer;
-        font-family: $avenirNext;
-        background-color: $yellow;
-        color: $black;
-        border-radius: 6px;
-        font-weight: 500;
-        font-size: 0.75rem;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 12px 25px 11px;
-
-        @include minWidth($breakPointMobile) {
-          line-height: 1.35714;
-        }
-
-        @include minWidth($breakPointTablet) {
-          font-size: 0.8rem;
-        }
-
-        @include minWidth($breakPointDesktop) {
-          font-size: 1.2rem;
-        }
+        width: 100%;
+        margin-bottom: 50px;
+        max-width: 210px;
+        min-width: 210px;
       }
     }
+  }
 
-    &-kit {
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
+  &slideTitle {
+    font-family: $avenirNext;
+    font-size: 1rem;
+    text-align: center;
+    // margin: 10px 0 40px;
+    margin: 10px 0;
 
-      @include minWidth($breakPointTablet) {
-        max-width: 30%;
-        width: inherit;
-        margin: 0;
-      }
-
-      &-title {
-        font-family: $helvetica;
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        // order: 3;
-
-        @include minWidth($breakPointMobile) {
-          font-size: 1.3rem;
-        }
-
-        @include minWidth($breakPointTablet) {
-          // order: 1;
-          font-size: 2.125rem;
-          margin-bottom: 20px;
-        }
-      }
-
-      &-big {
-        // order: 1;
-        @include minWidth($breakPointMobile) {
-          position: relative;
-        }
-
-        @include minWidth($breakPointTablet) {
-          // order: 2;
-          position: relative;
-        }
-
-        &-image {
-          display: block;
-          margin: 0 auto;
-          width: 60%;
-
-          @include minWidth($breakPointMobile) {
-            width: 70%;
-          }
-
-          @include minWidth($breakPointTablet) {
-            width: 100%;
-            margin-bottom: 50px;
-            max-width: 210px;
-            min-width: 210px;
-          }
-        }
-
-        &-title {
-          font-family: $avenirNext;
-          font-size: 1rem;
-          text-align: center;
-          // margin: 10px 0 40px;
-          margin: 10px 0;
-
-          @include minWidth($breakPointMobile) {
-            font-size: 1.25rem;
-            position: absolute;
-            color: $black;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-
-        }
-      }
+    @include minWidth($breakPointMobile) {
+      font-size: 1.25rem;
+      position: absolute;
+      color: $black;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
