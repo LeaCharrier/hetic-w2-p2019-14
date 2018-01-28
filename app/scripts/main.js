@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	sliderColorLunette();
+	sliderKitLunette();
 });
 
 var sliderColorLunette = function() {
@@ -18,11 +19,23 @@ var sliderColorLunette = function() {
 	  		centerPadding: '30px',
       }
     },
+   ]
+  });
+}
+
+var sliderKitLunette = function() {
+	$('.get-product__container-kit-slider').slick({
+	  slidesToShow: 1,
+	  arrows: false,
+	  slidesToScroll: 1,
+	  dots: true,
+
+	  responsive: [
     {
-      breakpoint: 500,
+      breakpoint: 768,
       settings: {
       	slidesToShow: 1,
-      	centerMode: true,
+        centerMode: true,
 	  		centerPadding: '30px',
       }
     },
