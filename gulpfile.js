@@ -22,7 +22,6 @@ var isProd = process.env.NODE_ENV === 'production';
 
 function templates() {
   return gulp.src('src/*.html')
-    // .pipe(pug())
     .pipe(gulp.dest('dist/'))
     .pipe(sync.stream());
 }
@@ -32,7 +31,8 @@ function templates() {
  */
 
 function scss() {
-  return gulp.src('src/styles/main.scss')
+  return gulp.src(['src/styles/main.scss', 'node_modules/slick-carousel/slick/slick.css', 'node_modules/slick-carousel/slick/slick-theme.css'])
+    .pipe(concat('main.scss'))
     .pipe(gulpif(!isProd, sourcemaps.init()))
     .pipe(sass())
     .pipe(gulpif(isProd, minifyCSS()))
