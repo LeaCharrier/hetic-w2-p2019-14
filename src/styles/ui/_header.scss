@@ -17,13 +17,13 @@
     position: absolute;
     text-indent: -3000px;
   }
-    
+
   &__img {
     width: 100px;
 
     @include minWidth($breakPointTablet) {
       width: 160px;
-    }
+    } 
   }
 
   &__link {

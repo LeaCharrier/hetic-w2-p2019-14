@@ -42,11 +42,14 @@ table {
   border-spacing: 0; }
 
 strong {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 a{
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+body{
+      overflow-x: hidden;
 }
