@@ -29,13 +29,18 @@
   &__link {
     background-color: $white;
     font-family: $avenirNext;
-    font-size: 0.875rem;
+    font-size: 0.65rem;
     text-align: center;
-    padding: 10px;
+    padding: 6px;
     border-radius: 10px;
 
+    @include minWidth($breakPointTablet) {
+      font-size: 0.875rem;
+      padding: 10px;
+    }
+
     &:hover {
-      opacity: 0.9;
+      background-color: $orange;
     }
   }
 }

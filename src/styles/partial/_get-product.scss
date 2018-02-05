@@ -72,10 +72,10 @@
   }
 
   &container-buy {
-    margin: 30px auto 70px;
+    margin: 30px auto 40px;
 
     @include minWidth($breakPointMobile) {
-      margin: 40px auto 100px;
+      margin: 40px auto 60px;
     }
 
     @include minWidth($breakPointTablet) {
@@ -119,6 +119,10 @@
     text-transform: uppercase;
     padding: 12px 25px 11px;
 
+    &:hover {
+      background-color: $orange;
+    }
+
     @include minWidth($breakPointMobile) {
       line-height: 1.35714;
     }
@@ -152,37 +156,33 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    // order: 3;
 
     @include minWidth($breakPointMobile) {
       font-size: 1.3rem;
     }
 
     @include minWidth($breakPointTablet) {
-      // order: 1;
       font-size: 2.125rem;
       margin-bottom: 20px;
     }
   }
 
   &kitSlide {
-    // order: 1;
     @include minWidth($breakPointMobile) {
       position: relative;
     }
 
     @include minWidth($breakPointTablet) {
-      // order: 2;
       position: relative;
     }
 
     &-img {
       display: block;
       margin: 0 auto;
-      width: 60%;
+      width: 78%;
 
       @include minWidth($breakPointMobile) {
-        width: 70%;
+        width: 50%;
       }
 
       @include minWidth($breakPointTablet) {
@@ -191,6 +191,10 @@
         max-width: 210px;
         min-width: 210px;
       }
+
+      @include minWidth($breakPointDesktop) {
+        max-width: 290px;
+      }
     }
   }
 
@@ -198,7 +202,6 @@
     font-family: $avenirNext;
     font-size: 1rem;
     text-align: center;
-    // margin: 10px 0 40px;
     margin: 10px 0;
 
     @include minWidth($breakPointMobile) {
@@ -208,6 +211,11 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      
+      &-chiffon {
+        bottom: inherit;
+      }
     }
   }
+
 }

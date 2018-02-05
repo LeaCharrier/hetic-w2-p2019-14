@@ -4,7 +4,7 @@
 .getProduct__kitSlider .slick-dots li.slick-active button:before {
   opacity: 1;
 }
-
+ 
 #slick-slide-control00, 
 #slick-slide-control01, 
 #slick-slide-control02, 
@@ -22,50 +22,101 @@
 // PRODUCT COLOR
 
 
-.getProduct__sliderColor #slick-slide-control00 {
-  &:before {
-    background-image: url('../images/oeilNoir.png');
+.getProduct__sliderColor {
+  #slick-slide-control00 {
+    &:before {
+      background-image: url('../images/oeilNoir.png');
+    }
   }
-}
 
-.getProduct__sliderColor #slick-slide-control01 {
-  &:before {
-    background-image: url('../images/oeilRouge.png');
+  #slick-slide-control01 {
+    &:before {
+      background-image: url('../images/oeilRouge.png');
+    }
   }
-}
 
-.getProduct__sliderColor #slick-slide-control02 {
-  &:before {
-    background-image: url('../images/oeilBleu.png');
+  #slick-slide-control02 {
+    &:before {
+      background-image: url('../images/oeilBleu.png');
+    }
+  }
+
+  #slick-slide-control00, 
+  #slick-slide-control01, 
+  #slick-slide-control02 {
+    &:before {
+      @include minWidth($breakPointDesktop) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .slick-dots li {
+    @include minWidth($breakPointDesktop) {
+      height: 30px;
+      width: 30px;
+      margin: 0 10px;
+     }
   }
 }
 
 // PRODUCT KIT
 
-.getProduct__kitSlider #slick-slide-control10, 
-.getProduct__kitSlider #slick-slide-control11, 
-.getProduct__kitSlider #slick-slide-control12 {
-  &:before {
-     width: 24px;
-  }
-}
+.getProduct__kitSlider {
 
-.getProduct__kitSlider #slick-slide-control10 {
-  &:before {
-    background-image: url('../images/etui-little.png');
-    height: 22px;
+  .slick-dots li {
+    @include minWidth($breakPointDesktop) {
+      height: 40px;
+      width: 40px;
+      margin: 0 10px;
+     }
   }
-}
 
-.getProduct__kitSlider #slick-slide-control11 {
-  &:before {
-    background-image: url('../images/cable-little.png');
+  .slick-dots {
+    margin-bottom: -10px;
   }
-}
 
-.getProduct__kitSlider #slick-slide-control12 {
-  &:before {
-    background-image: url('../images/chiffon.jpeg');
+  #slick-slide-control10, 
+  #slick-slide-control11, 
+  #slick-slide-control12 {
+    &:before {
+       width: 24px;
+
+       @include minWidth($breakPointDesktop) {
+        height: 40px;
+        width: 40px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+       }
+    }
+  }
+
+  #slick-slide-control10 {
+    &:before {
+      background-image: url('../images/etui-little.png');
+      height: 22px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      @include minWidth($breakPointDesktop) {
+        height: 40px;
+       }
+    }
+  }
+
+  #slick-slide-control11 {
+    &:before {
+      background-image: url('../images/cable-little.png');
+    }
+  }
+
+  #slick-slide-control12 {
+    &:before {
+      background-image: url('../images/chiffon.jpeg');
+    }
   }
 }
 
