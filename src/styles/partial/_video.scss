@@ -12,10 +12,10 @@
         margin-top: 10px;
       }
       &:nth-child(2){
-        margin-top: 20px;
+        margin-top: 70px;
       }
       &:nth-child(3){
-        margin-top: 30px;
+        margin-top: 35px;
       }
     }
     &__single{
@@ -35,13 +35,21 @@
         // width: 315px;
         // height: 315px;
         // position: absolute;
-        // top: -31px;
+        // top: -31px;)
         // left:-31px;
       }
     }
     &__container{
       display: flex;
       justify-content: space-around;
+
+      @include maxWidth($breakPointMobile) {
+        left: 50%;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        transform: translateX(-50%);
+      }
     }
   }
 }
