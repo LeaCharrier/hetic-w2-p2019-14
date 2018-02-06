@@ -15,7 +15,7 @@ Your site should now be running
 
 ### Deployed
 ```sh
-$ npm gulp build
+$ npm run build
 ```
 Link : https://hetic-w2-p2019-14-spectacle.netlify.com/
 
