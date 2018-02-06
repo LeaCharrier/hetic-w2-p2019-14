@@ -1,55 +1,47 @@
-.presentationProduct{
-  &__videos{
-    overflow-x: hidden;
-    &__wraper{
-      width: 250px;
-      height: 250px;
-      border-radius: 125px;
-      -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+.presentationProductVideos {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
 
-      //Règle les videos ici, pour les responsive t'as juste a mettre une "flex-direction: column"
-      &:nth-child(1){
-        margin-top: 10px;
-      }
-      &:nth-child(2){
-        margin-top: 70px;
-      }
-      &:nth-child(3){
-        margin-top: 35px;
-      }
+  @include maxWidth($breakPointMobile) {
+    left: 50%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  &__wraper {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+
+    &:nth-child(1) {
+      margin-top: 10px;
     }
-    &__single{
-
-      &__bg{
-        position: relative;
-        z-index: 10;
-        border-radius: 50%;
-      };
-
-      &__iframe{
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        top: -125px;
-        left: -125px;
-        // width: 315px;
-        // height: 315px;
-        // position: absolute;
-        // top: -31px;)
-        // left:-31px;
-      }
+    &:nth-child(2) {
+      margin-top: 70px;
     }
-    &__container{
-      display: flex;
-      justify-content: space-around;
+    &:nth-child(3) {
+      margin-top: 35px;
+    }
+  }
 
-      @include maxWidth($breakPointMobile) {
-        left: 50%;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        transform: translateX(-50%);
-      }
+  &__single {
+
+    &__bg {
+      position: relative;
+      z-index: 10;
+      border-radius: 50%;
+    };
+
+    &__iframe {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: -125px;
+      left: -125px;
     }
   }
 }
