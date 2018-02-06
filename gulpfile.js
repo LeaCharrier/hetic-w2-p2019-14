@@ -17,7 +17,7 @@ var uglify = require('gulp-uglify');
 var isProd = process.env.NODE_ENV === 'production';
 
 /**
- * PUG
+ * TEMPLATE
  */
 
 function templates() {
