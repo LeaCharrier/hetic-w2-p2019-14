@@ -8,7 +8,7 @@ let lunette = document.querySelector(".lunettes");
 let anim = document.querySelector(".animation-block");
 
 var fixedControl = function(){
-    let actualScroll = window.pageYOffset + 250;
+    let actualScroll = window.pageYOffset + 100;
     let elementTop = global.offsetTop;
 
     if (actualScroll >= elementTop && !anim.classList.contains('mr-scroll')){

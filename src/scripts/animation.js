@@ -3,9 +3,6 @@ export function animation() {
     var controller = new ScrollMagic.Controller();
 
 
-    console.log("yo");
-
-
     var tweenBrancheUp = new TimelineMax();
     tweenBrancheUp.add(
         TweenMax.to(".branche", 1, {y:"-150px",force3D: true})

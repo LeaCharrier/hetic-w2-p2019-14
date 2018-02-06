@@ -1,39 +1,45 @@
 .hide-on-mobile {
-	@include minWidth($breakPointMobile) {
-		display: none;
-	}
+
+  @include minWidth($breakPointMobile) {
+    display: none;
+  }
 }
 
 .hide-on-tablet {
-	@include minWidth($breakPointTablet) {
-		display: none;
-	}
+
+  @include minWidth($breakPointTablet) {
+    display: none;
+  }
 }
 
 .hide-on-desktop {
-	@include minWidth($breakPointDesktop) {
-		display: none;
-	}
+
+  @include minWidth($breakPointDesktop) {
+    display: none;
+  }
 }
 
 
 .show-on-mobile {
-	display: none;
-	@include minWidth($breakPointMobile) {
-		display: block;
-	}
+  display: none;
+
+  @include minWidth($breakPointMobile) {
+    display: block;
+  }
 }
 
 .show-on-tablet {
-	display: none;
-	@include minWidth($breakPointTablet) {
-		display: block;
-	}
+  display: none;
+
+  @include minWidth($breakPointTablet) {
+    display: block;
+  }
 }
 
 .show-on-desktop {
-	display: none;
-	@include minWidth($breakPointDesktop) {
-		display: block;
-	}
+  display: none;
+  
+  @include minWidth($breakPointDesktop) {
+    display: block;
+  }
 }

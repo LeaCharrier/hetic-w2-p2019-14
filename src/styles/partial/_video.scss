@@ -1,31 +1,31 @@
 .presentationProductVideos {
   overflow: hidden;
+  display: none;
   flex-direction: column;
   position: relative;
-  display: none;
 
   @include minWidth($breakPointTablet) {
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
-    display: flex;
     padding: 30px 0 60px;
   }
 
   &__wraper {
+    display: none;
+    position: relative;
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: none;
 
     @include minWidth($breakPointTablet) {
+      display: block;
       width: 190px;
       height: 190px;
       left: inherit;
       transform: translateX(-0%);
-      display: block;
     }
     
     @include minWidth($breakPointDesktop) {

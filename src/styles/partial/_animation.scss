@@ -1,106 +1,105 @@
 .container-global {
-    width: 90%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+
+  .mr-scroll {
+    position: fixed;
+    top: 250px;
+    left: 25%;
+
+  }
+  
+  .animation-block {
+    width: 50%;
     margin: 0 auto;
-    margin-top: 100px;
-    position: relative;
-
-    .mr-scroll {
-        position: fixed;
-        top: 250px;
-        left: 25%;
-
-    }
-    .animation-block {
-            width: 50%;
-            margin: 0 auto;
 
 
     .txt-interrupteur, .txt-branche, .txt-appareil {
-        opacity: 0;
-        font-family: $avenirNext;
-        font-size: 0.625rem;
-        line-height: 1.5;
-        position: relative;
-        left: -50px;
+      opacity: 0;
+      font-family: $avenirNext;
+      font-size: 0.625rem;
+      line-height: 1.5;
+      position: relative;
+      left: -50px;
     }
     
     .container-lunettes {
 
-        .lunettes {
-            width: 55%;
-            position: relative;
-            top: 100px;
-            z-index: 3;
-        }
+      .lunettes {
+        width: 55%;
+        position: relative;
+        top: 100px;
+        z-index: 3;
+      }
 
-        .appareil_photo {
-            width: 10%;
-            position: relative;
-            z-index: 2;
-            top: 70px;
-            right: 85px;
-        }
-    }
+      .appareil_photo {
+        width: 10%;
+        position: relative;
+        z-index: 2;
+        top: 70px;
+        right: 85px;
+      }
+  }
 
-    .container-branche {
+  .container-branche {
 
-        img {
-            width: 33%;
-            position: relative;
-            left: 52%;
-            bottom: -62px;
-        }
-    }
+      img {
+        width: 33%;
+        position: relative;
+        left: 52%;
+        bottom: -62px;
+      }
+  }
 
     .container-interrupteur {
 
-
-        img {
-            width: 6%;
-            position: absolute;
-            left: 44%;
-            bottom: -15px;
-        }
+      img {
+        width: 6%;
+        position: absolute;
+        left: 44%;
+        bottom: -15px;
+      }
     }
-}
+  }
 }
 
 
 .brancheUp {
-    height: 200px;
-    width: 100%;
+  height: 200px;
+  width: 100%;
 }
 
 .brancheDown {
-    height: 200px;
-    width: 100%;
-    margin-top: 100%;
+  height: 200px;
+  width: 100%;
+  margin-top: 100%;
 }
 
 .appareilUp {
-    height: 200px;
-    width: 100%;
+  height: 200px;
+  width: 100%;
 }
 
 .appareilDown {
-    height: 200px;
-    width: 100%;
-    margin-top: 100%;
+  height: 200px;
+  width: 100%;
+  margin-top: 100%;
 }
 
 .interrupteurUp {
-    height: 200px;
-    width: 100%;
+  height: 200px;
+  width: 100%;
 }
 
 .interrupteurDown {
-    height: 200px;
-    width: 100%;
-    margin-top: 100%;
+  height: 200px;
+  width: 100%;
+  margin-top: 100%;
 }
 
-
 .discover-snap {
-    margin-top: 500vh;
+  margin-top: 500vh;
 }
 
